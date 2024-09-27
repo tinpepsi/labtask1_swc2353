@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: inherit;
+    padding-top: 60px;
+}
+
+/* Style for the header */
+header {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(232,145,14,1) 43%);
+    padding: 10px 0; 
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+}
+
+/* Style for the navigation menu */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+/* Style for the navigation links */
+nav ul a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    line-height: 1.2; 
+}
+
+
+nav ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+/* Style for the logo image */
+nav ul img {
+    max-height: 60px;  
+    width: auto;  
+    object-fit: contain;  
+}
+
+/* Dropdown menu styles */
+nav ul li .dropdown-Business,
+nav ul li .dropdown-Driver,
+nav ul li .dropdown-Company {
+    display: none;
+    position: absolute;
+    top: 25px; 
+    left: 0;
+    background-color:#512000; 
+    list-style: none; 
+    z-index: 9999; 
+}
+
+nav ul li .dropdown-Business li,
+nav ul li .dropdown-Driver li,
+nav ul li .dropdown-Company li {
+    width: 150px;
+    list-style: none; 
+}
+
+nav ul li .dropdown-Business li a,
+nav ul li .dropdown-Driver li a,
+nav ul li .dropdown-Company li a {
+    display: block;
+    padding: 10px;
+	background-color: #512000;
+}
+
+nav ul li .dropdown-Business li a:hover,
+nav ul li .dropdown-Driver li a:hover,
+nav ul li .dropdown-Company li a:hover {
+    background-color: black;
+}
+
+nav ul li:hover .dropdown-Business,
+nav ul li:hover .dropdown-Driver,
+nav ul li:hover .dropdown-Company {
+    display: block; 
+}
+
+/* END OF HEADER */
+
+.content {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    flex-direction: column;   
+   	margin-bottom: 150px;
+	width: 100%;
+	padding: 10px;
+	padding-top: 180px;
+	flex-wrap: wrap;
+	min-height: 0px;
+}
+
+.container {
+	display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 65vh;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px; 
+    margin: 70px;
+    display: block;
+}
+
+
+.text-container{
+	width: 100%; 
+	margin-left: 10px;
+	box-sizing: border-box;
+}
+
+.text-container h1{
+	font-size: 30px;
+	font-weight: 300;
+	margin-right: 20px;
+}
+
+.text-container h1 span{
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* Truck content */
+.truck_box {
+    display: flex;
+    align-items: center; 
+	margin: 20px;
+}
+
+.truck_box img {
+    margin-right: 20px; 
+}
+
+ .truck_box p {
+    margin: 0; 
+}
+
+.truck_box p{
+	font-size: 25px;
+    margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.truck_box p span{
+	font-size: 18px;
+	font-weight: 300;
+}
+/*end of  Truck content */
+
+/* hand_coin content */
+.hand_coin {
+    display: flex;
+    align-items: center; 
+	margin: 20px;
+}
+
+.hand_coin img {
+    margin-right: 20px; 
+}
+
+ .hand_coin p {
+    margin: 0; 
+}
+
+.hand_coin p{
+	font-size: 25px;
+    margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.hand_coin p span{
+	font-size: 18px;
+	font-weight: 300;
+}
+/*end of  hand_coin content */
+
+/* packaging content */
+.packaging {
+    display: flex;
+    align-items: center; 
+	margin: 20px;
+}
+
+.packaging img {
+    margin-right: 20px; 
+}
+
+ .packaging p {
+    margin: 0; 
+}
+
+.packaging p{
+	font-size: 25px;
+    margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.packaging p span{
+	font-size: 18px;
+	font-weight: 300;
+}
+/*end of  packaging content */
+
+/* tracking content */
+.tracking {
+    display: flex;
+    align-items: center; 
+	margin: 20px;
+}
+
+.tracking img {
+    margin-right: 20px; 
+}
+
+ .tracking p {
+    margin: 0; 
+}
+
+.tracking p{
+	font-size: 25px;
+    margin-bottom: 10px;
+	font-weight: 700;
+}
+
+.tracking p span{
+	font-size: 18px;
+	font-weight: 300;
+}
+/*end of  tracking content */
+
+/* Style for the centered section */
+.centered-section {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 10vh;             
+    padding: 20px;            
+	margin-bottom: 30px;
+	
+}
+
+/* Style for the button link */
+.click-button {
+    display: inline-block;      
+    background-color: #FF6413;  
+    color: white;               
+    text-decoration: none;      
+    padding: 10px 20px;         
+    font-size: 50px;            
+    border-radius: 8px;        
+    cursor: pointer;            
+}
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: #DCDCDC;
+    position: absolute;
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box1 p {
+    font-size: 20px;
+	color: #8A8A8A;
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-right: 30%; 
+	margin-top: 10px;
+}
+
+.follow span {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px; 
+    margin-left: 0; 
+    margin-right: 10px; 
+}
+
+
+.social-buttons {
+    display: flex;
+    gap: 5px; 
+}
+
+.social-button {
+    display: inline-block;
+    width: 70px; 
+    height: 70px; 
+    background-size: 40px 40px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 40px; 
+    text-decoration: none;
+	margin-bottom: 10px;
+	
+		
+}
+
+.social-button.facebook {
+    background-image:url("../pic/media_sosial/fb.png");
+}
+
+.social-button.instagram {
+    background-image: url("../pic/media_sosial/ig.png");
+}
+
+.social-button.youtube {
+    background-image: url("../pic/media_sosial/yt.png");
+}
+
+.social-button.linkedin {
+    background-image: url("../pic/media_sosial/li.webp");
+}
+
+
+
+
+
+
